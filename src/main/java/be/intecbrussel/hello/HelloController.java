@@ -11,4 +11,10 @@ public class HelloController {
         return "Hello";
     }
 
+// request mapping with just a "/" allows something to be put directly on main page
+    @RequestMapping("/")
+    public String sayHello(){
+        return "Howdy";
+    }
+
 }
